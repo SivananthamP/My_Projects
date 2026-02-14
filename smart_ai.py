@@ -1,7 +1,4 @@
-# ================= INSTALL (RUN ONCE) =================
-!pip install diffusers transformers accelerate safetensors gradio
 
-# ================= IMPORTS =================
 import torch
 from diffusers import StableDiffusionPipeline, StableDiffusionInpaintPipeline, DPMSolverMultistepScheduler
 from PIL import Image
@@ -133,3 +130,4 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
         btn_inpaint.click(inpaint_image, inputs=[in_prompt, upload_img], outputs=[out_inpaint, out_prompt2])
 
 demo.launch(share=True)
+
