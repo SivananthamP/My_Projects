@@ -109,8 +109,8 @@ def inpaint_image(prompt, input_image):
 
 # ================= GRADIO UI =================
 with gr.Blocks(theme=gr.themes.Soft()) as demo:
-    gr.Markdown("## 🎨 SMART AI Image GENERATOR
-                (Qwen + Realistic Vision V5)")
+    gr.Markdown("""## 🎨 SMART AI Image GENERATOR
+                (Qwen + Realistic Vision V5)""")
 
     with gr.Tab("🖼️ Text to Image"):
         txt_prompt = gr.Textbox(label="Enter Prompt", placeholder="a man proposing to a girl with a rose")
